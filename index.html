@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="w-75 py-4 mx-auto">
+        <label class="my-1" for="productName">productName : </label>
+        <input type="text" class="form-control my-1" id="productName">
+    
+        <label class="my-1" for="productPrice">productPrice : </label>
+        <input type="text" class="form-control my-1" id="productPrice">
+    
+        <label class="my-1" for="productCategory">productCategory : </label>
+        <input type="text" class="form-control my-1" id="productCategory">
+    
+        <label class="my-1" for="productDesc">productDesc : </label>
+        <textArea type="text" class="form-control my-1" id="productDesc"></textArea>
+    
+        <button id="button3" class=" one btn btn-info my-2">Add</button>
+    </div>
+
+    <div class="w-75 mx-auto py-3">
+
+        <div class="w-75 mx-auto py-3">
+            <label for="searchInput" class="py-2"> Search...</label>
+            <input  type="text" class="form-control" id="searchInput">
+        </div>
+
+        <table class="table">
+            <thead>
+                <th>index</th>
+                <th>productName</th>
+                <th>productPrice</th>
+                <th>productCategory</th>
+                <th>productDes</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableRow">
+
+            </tbody>
+        </table>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

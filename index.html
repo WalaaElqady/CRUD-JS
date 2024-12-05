@@ -4,62 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Management</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    <div class="w-75 py-4 mx-auto">
-        <label class="my-1" for="productName">productName : </label>
-        <input type="text" class="form-control my-1" id="productName">
-    
-        <label class="my-1" for="productPrice">productPrice : </label>
-        <input type="text" class="form-control my-1" id="productPrice">
-    
-        <label class="my-1" for="productCategory">productCategory : </label>
-        <input type="text" class="form-control my-1" id="productCategory">
-    
-        <label class="my-1" for="productDesc">productDesc : </label>
-        <textArea type="text" class="form-control my-1" id="productDesc"></textArea>
-    
-        <button id="button3" class=" one btn btn-info my-2">Add</button>
-    </div>
+    <div class="container pb-4">
+        <h2 class="text-center mb-4">Product Management</h2>
 
-    <div class="w-75 mx-auto py-3">
-
-        <div class="w-75 mx-auto py-3">
-            <label for="searchInput" class="py-2"> Search...</label>
-            <input  type="text" class="form-control" id="searchInput">
+        <!-- Form Section -->
+        <div class="row g-3 mb-4">
+            <div class="col-md-6">
+                <label for="productName" class="form-label">Product Name</label>
+                <input type="text" class="form-control" id="productName" placeholder="Enter product name">
+            </div>
+            <div class="col-md-6">
+                <label for="productPrice" class="form-label">Product Price</label>
+                <input type="number" class="form-control" id="productPrice" min="0" step="any" placeholder="Enter product price">
+            </div>
+            <div class="col-md-6">
+                <label for="productCategory" class="form-label">Product Category</label>
+                <input type="text" class="form-control" id="productCategory" placeholder="Enter product category">
+            </div>
+            <div class="col-md-6">
+                <label for="productDesc" class="form-label">Product Description</label>
+                <textarea class="form-control" id="productDesc" rows="1" placeholder="Enter product description"></textarea>
+            </div>
+            <div class="col-12">
+                <button id="button3" class="btn btn-info w-100 text-white">Add</button>
+            </div>
         </div>
 
-        <table class="table">
-            <thead>
-                <th>index</th>
-                <th>productName</th>
-                <th>productPrice</th>
-                <th>productCategory</th>
-                <th>productDes</th>
-                <th>Update</th>
-                <th>Delete</th>
-            </thead>
-            <tbody id="tableRow">
+        <!-- Search Section -->
+        <div class="mb-4">
+            <label for="searchInput" class="form-label">Search Products</label>
+            <input type="text" class="form-control" id="searchInput" placeholder="Type to search...">
+        </div>
 
-            </tbody>
-        </table>
+        <!-- Table Section -->
+        <div class="table-responsive">
+            <table class="table table-bordered text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Product Name</th>
+                        <th>Product Price</th>
+                        <th>Product Category</th>
+                        <th>Product Description</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableRow">
+                    <!-- Dynamic Rows -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination Section -->
+        <div id="pagination" class="d-flex justify-content-center mt-0">
+            <!-- Dynamic Pagination -->
+        </div>
     </div>
-    
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="main.js"></script>
